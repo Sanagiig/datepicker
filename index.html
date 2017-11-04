@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>纯JS 日历</title>
+    <link rel="stylesheet" type="text/css" href="datepicker.css">
+    <style>
+        body{
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="ui-datepicker-wraper can-move"></div>
+    <!--<div class="ui-datepicker-wraper2 can-move"></div>-->
+    <div class="ui-datepicker-wraper3 can-move"></div>
+    <script type="text/javascript" src="sanagi.js"></script>
+    <script type="text/javascript" src="datepicker-core.js"></script>
+    <script>
+        d = new datepicker()
+        dd = new datepicker()
+        d.init('.ui-datepicker-wraper');
+        dd.init('.ui-datepicker-wraper3');
+    </script>
+</body>
+</html>
